@@ -1,4 +1,7 @@
-package repository
+package com.lisen.product.repository
+
+import com.lisen.product.model.Product
+import org.springframework.data.jpa.repository.JpaRepository
 
 /**
  *
@@ -7,7 +10,7 @@ package repository
  * @create 2018-08-29 04-55
  *
  **/
-interface ProductRepository {
+interface ProductRepository : JpaRepository<Product, Int> {
 
 
 

@@ -22,5 +22,5 @@ data class Product(
         var description: String = "",
         var icon: String = "",
         var status: Boolean = false,
-        var categoryId: Int = 0
+        var categoryId: Category = Category()
 )
