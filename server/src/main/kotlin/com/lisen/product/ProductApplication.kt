@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 
 @EnableEurekaClient
 @SpringBootApplication
-class ProductApplication
+open class ProductApplication
 
 fun main(args: Array<String>) {
     runApplication<ProductApplication>(*args)
