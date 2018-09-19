@@ -16,11 +16,13 @@ import org.springframework.transaction.annotation.Transactional
  **/
 
 @Service
-class CategoryServiceImpl : CategoryService {
+open class CategoryServiceImpl : CategoryService {
 
     @Autowired
     lateinit var categoryRepository: CategoryRepository
 
     @Transactional(rollbackFor = [Exception::class])
     override fun findAll(): List<Category> = categoryRepository.findAll()
+
+
 }
